@@ -2,13 +2,11 @@
     NAME; ELVIS JOHNSTONE
 */
 #include <stdio.h>
-
 int main() {
     int start;
     int stop;
     int next;
- 
-    printf("Enter when to start: ");
+printf("Enter when to start: ");
     scanf("%d", &start);
 
     printf("Enter when to stop: ");
