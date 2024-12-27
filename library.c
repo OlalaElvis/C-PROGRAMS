@@ -27,7 +27,6 @@ int main(){
         printf("book id:%d\n",bookid);
          printf("Due Date:%d\n",dueDate);
          printf("Days Overdue:%d\n",daysOverdue);
-           printf("fine Rate:%d\n",fineRate);
 
      }
      
@@ -37,15 +36,21 @@ int main(){
      if(daysOverdue>0 &&daysOverdue <= 7){
          fineRate = 20;
          fineAmount = fineRate * daysOverdue;
-         printf(" FINE AMOUNT:%d",fineAmount);
+         printf(" FINE AMOUNT:%d\n",fineAmount); 
+         printf("fine Rate:%d\n",fineRate);
+
+         
      }else if(daysOverdue >7 && daysOverdue <=14){
          fineRate = 50;
-         fineAmount = fineRate * daysOverdue;
-         printf("FINE AMOUNT:%d",fineAmount);
+         fineAmount = fineRate * daysOverdue; 
+         printf("fine Rate:%d\n",fineRate);
+         printf("FINE AMOUNT:%d\n",fineAmount);
+         
      }else if(daysOverdue >=15){
          fineRate = 100;
          fineAmount = fineRate * daysOverdue;
-         printf(" FINE AMOUNT:%d",fineAmount);
+         printf(" FINE AMOUNT:%d\n",fineAmount); 
+         printf("fine Rate:%d\n",fineRate);
      }
        
     return 0;
